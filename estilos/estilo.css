@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: black;
+    background-color: #FCE386;
+    padding: 0;
+    margin: 0;  
+}
+
+.logo {
+    font-weight: 800;
+    color: white;
+    font-size: 170%;
+    cursor: pointer;
+}
+
+.twitter {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    background-color: #FC6C6C;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    gap: 1em;
+    height: 80px;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 25px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 2px 12px;
+
+}
+
+.barra input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    flex: 1;
+}
+
+.barra button {
+    width: 18px;
+    height: 18px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.barra button img {
+    width: 18px;
+    height: 18px;
+}
+
+.menu {
+    display: none;
+}
+
+.pesquisar {
+    display: none;
+}
+
+li, a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0px 40px 0 0px;
+    transition: all 0.3s;
+}
+
+header ul li:hover {
+    transform: scale(110%);
+}
+
+header ul a {
+    color: white;
+}
+
+/* .inicial {
+
+}
+ */
+
+.Inicial{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;     
+    align-items:center; 
+    background-color:#46DB70;
+}
+
+.Novidade_Inverno{
+    margin-top:65px;
+    height:400px;
+    width:80%;
+    display:flex;
+    justify-content:center;     
+    align-items:center;  
+    line-height:2px;
+}
+
+    .Novidade_Inverno_Text{   
+        width:60%;
+        padding:0%;
+        color: #424242;
+    }
+
+    .Novidade_Inverno_Text p{
+        font-size:20px;
+    }
+
+    .Novidade_Inverno_Text h3{
+        font-size:90px;
+    }
+
+    .Novidade_Inverno_Text button{
+        background-color:#ffffff;
+        border:none;
+        height:50px;
+        width:200px;
+        font-size:20px;
+        border-radius:10vw;
+    }
+
+    .Novidade_Inverno_Img{
+        width:40%;
+        display:flex;
+        justify-content:center;     
+        align-items:center;  
+    }
+
+    .Novidade_Inverno_Img img{
+        width:300px;
+        height:300px;
+    }
+
+.Inicial_Produtos{
+    display: block;
+    height:330px;
+    width:100%;
+    background-color:white;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.Inicial_Produto{
+    height:fit-content;
+    width:30%;
+    border-radius:25px;
+    color:rgb(43, 43, 43);
+    padding:10px;
+}
+
+.Inicial_Produto button{
+    background-color:#FF6B6B;
+    border:none;
+    height:30px;
+    width:120px;
+    font-size:15px;
+    border-radius:30px;
+}
+
+.Raposa{
+    background-color: #D9D9D9;
+    display:flex;
+    align-items:center;
+}
+
+
+.Inicial_Produtos h3{
+    margin:0;
+    font-size:20px;
+}
+
+.Praia{
+    background-color: #FF6B6B;
+    display:flex;
+    align-items:center;
+}
+
+    .Praia button{
+        background-color: #46DB70;
+    }
+
+    .Praia h3{
+        color:white;
+    }
+
+    .Praia p{
+        font-size:13px;
+    }
+
+.Furao{
+    display:flex;
+    align-items:center;
+    background-color:#D9D9D9;
+}
+
+.Raposa, .Furao, p{
+    font-size:15px;
+}
+
+    .Inicial_Img{
+        width:50%;
+        height:170px;
+        display:flex;  
+        justify-content:center;   
+        align-items:center;     
+    }
+
+    .Inicial_Img img{
+        height:170px;
+        width:170px;
+    }
+
+    .Inicial_Text{
+        width:50%;
+        height:fit-content;
+        padding:4%; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+.colecoes {
+    padding: 80px 10%;
+    height: 100vh;
+}
+
+.produtos {
+    padding: 80px 10% 150px;
+    z-index: -100000;
+}
+
+.banner-produtos {
+    color: #111;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0px;
+    z-index: 1;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.banner-fundo {
+    background-image: url('https://img.freepik.com/free-photo/cute-fluffy-bear-toys_23-2149642374.jpg?w=2000');
+    filter: brightness(60%);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+ 
+.banner-produtos h1 {
+    font-size: 80px;
+    filter: brightness(100%);
+}
+
+.banner-produtos p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.grid-prdt-produtos {
+    margin-top: 300px;
+    display: grid;
+    grid-template-rows: repeat(2, fit-content);
+    grid-template-columns: repeat(4 , minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.produto-produtos {
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 20px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s;
+}
+
+.produto-produtos:hover {
+    transform: scale(103%);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.produto-produtos p {
+    margin: 10px;
+}
+
+.produto-comprar-produtos {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: #FC6C6C;
+    color: white;
+    border-radius: 2cm;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    transition: all 0.3s;
+}
+
+.produto-comprar-produtos:hover {
+    background-color: #46DB70;
+}
+
+.precos-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #606060;
+    font-size: 16px;
+}
+
+.img-comprar-produtos {
+    width: fit-content;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.img-prdt-produtos {
+    height: 220px;
+    width: 180px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.descricao-produtos {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-1-produtos {
+    background-image: url('https://mybtoys.com/wp-content/uploads/LB1904_PR.png');
+}
+
+.item-2-produtos {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZfN_ss81tcJsWl01ZHZkYC862O_OMd6zWQ&usqp=CAU');
+}
+
+.item-3-produtos {
+    background-image: url('https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_large.png?v=1631621515');
+}
+
+.item-4-produtos {
+    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696');
+}
+
+/* @keyframes arcoiris {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.animation-arcoiris {
+    animation-name: arcoiris;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+ */
+
+.about {
+    padding: 70px ; 
+    height: 100vh;
+    
+}
+
+.about .titulo{
+    font-size: 35px;
+    padding-top: 5%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.about .descripition{
+    padding: -1em;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.parte1baner{
+    background-color: #46DB70;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXOtnSt8nfz7S7lnRhVZohzROmYo9RR4dWg&usqp=CAU);
+    opacity: calc(80%);
+    padding-top: -1px;
+    padding-bottom: 5%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.parte2descripition{
+    padding-top: none;
+    position: absolute; 
+    background-color: #46DB70;
+}
+
+footer {
+    background-color: #FC6C6C;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5vw;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        font-size: 4vw;
+    }
+
+    header nav {
+        display: none;
+    }
+    
+    .barra {
+        width: 50%;
+    }
+    
+    .menu {
+        display: block;
+        filter: invert(100%);
+        cursor: pointer;
+        height: 6vw;
+    }
+
+    .twitter {
+        display: none;
+    }
+
+    .grid-prdt-produtos {
+        margin-top: 200px;
+        display: grid;
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-columns: repeat(auto-fit , minmax(180px, 1fr));
+        gap: 1em;
+    }
+    
+    .produto-produtos {
+        background-color: white;
+        border-radius: 20px;
+        height: fit-content;
+        padding: 10px;
+        line-height: 1;
+        font-size: 15px;
+    }
+
+    .img-prdt-produtos {
+        width: 100%;
+        height: 200px;
+    }
+
+    .produto-produtos p {
+        margin: 5px;
+    }
+
+    .produto-comprar-produtos {
+        font-size: 15px;
+    }
+
+    .banner-produtos {
+        height: 18vh;
+    }
+
+    .banner-produtos h1 {
+        font-size: 10vw;
+        filter: brightness(100%);
+    }
+    
+    .banner-produtos p {
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .Inicial_Produtos{
+        flex-direction:column;
+        height:800px;
+    }
+
+    .Inicial_Produto{
+        width:88%;
+        height:fit-content;
+    }
+
+    .Inicial_Produto h3{
+        font-size:30px;
+    }
+
+    .Novidade_Inverno{
+        flex-direction:column;
+        height:fit-content;
+        text-align:center;
+        margin-top:115px;
+        margin-bottom:50px;
+        width:100%;
+    }
+
+    .Novidade_Inverno p{
+        font-size:25px;
+        line-height:30px;
+    }
+
+    .Novidade_Inverno_Text{
+        margin:none;
+        width:100%;
+    }
+
+    .Inicial_Produto button{
+        height:50px;
+        width:120px;
+        font-size:17px;
+    }
+
+    .Novidade_Inverno_Img{
+        margin-top:40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+  
+    .menu {
+        height: 30px;
+    }
+
+    .barra {
+        display: none;
+    }
+
+    .produtos {
+        padding-top: 50px;
+    }
+
+    .banner-produtos h1 {
+        font-size: 12vw;
+    }
+
+    .grid-prdt-produtos {
+        margin-top: 150px;
+    }
+
+    .banner-produtos {
+        height: 120px;
+    }
+
+    .pesquisar {
+        display: flex;
+        height: 25px;
+        filter: invert(100%);
+    }
+
+    .selecionar {
+        width: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grid-prdt-produtos {
+        grid-template-columns: repeat(auto-fit , minmax(100px, 1fr));
+    }
+
+    .img-prdt-produtos {
+        height: 140px;
+        width: 100%;
+    }
+
+    .descricao-produtos {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .produto-comprar-produtos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .precos-produtos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .produto-produtos p {
+        font-size: 10px;
+        margin: 2px;
+    }
+
+    .img-comprar-produtos {
+        filter: invert(100%);
+        height: 18px;
+    }
+
+    .Novidade_Inverno h3{
+        font-size: 70px;
+    }
+
+    .Novidade_Inverno button{
+        height:45px;
+        width:170px;
+        font-size:17px;
+    }
+
+    .Inicial_Produto button{
+        height:50px;
+        width:120px;
+        font-size:17px;
+    }
+
+    .Inicial_Produto{
+        height:fit-content;
+        width:80%;
+    }
+
+    .Inicial_Produtos{
+        height:970px;
+    }
+
+    .Inicial_Produto h3{
+        font-size:25px;
+    }
+
+    .Inicial_Img img{
+        height:150px;
+        width:150px;
+    }
+}
