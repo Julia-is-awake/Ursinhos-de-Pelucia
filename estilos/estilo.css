@@ -515,6 +515,8 @@ footer ul li {
     line-height: 30px;
 }
 
+/*Mudanças para ipad!!!!!! (e o galaxy fold aberto) */
+
 @media only screen and (max-width: 1000px) {
     .logo {
         font-size: 4vw;
@@ -598,7 +600,7 @@ footer ul li {
 
     .Inicial_Produtos{
         flex-direction:column;
-        height:800px;
+        height:820px;
     }
 
     .Inicial_Produto{
@@ -640,7 +642,9 @@ footer ul li {
     }
 }
 
-@media only screen and (max-width: 767px) {
+/*Mudanças para o celular!!!!*/
+
+@media only screen and (max-width: 500px) {
     header {
         height: 50px;
     }
@@ -751,7 +755,7 @@ footer ul li {
     }
 
     .Inicial_Produtos{
-        height:800px;
+        height:880px;
     }
 
     .Inicial_Produto h3{
