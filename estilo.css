@@ -1,0 +1,1266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: black;
+    background-color: #FCE386;
+    padding: 0;
+    margin: 0;  
+    border: 0;
+    box-sizing: 0;
+}
+
+.logo {
+    font-weight: 800;
+    color: white;
+    font-size: 170%;
+    cursor: pointer;
+}
+
+.twitter {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    background-color: #FC6C6C;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    gap: 1em;
+    height: 80px;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 25px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 2px 12px;
+
+}
+
+.barra input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    flex: 1;
+}
+
+.barra button {
+    width: 18px;
+    height: 18px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.barra button img {
+    width: 18px;
+    height: 18px;
+}
+
+.menu {
+    display: none;
+}
+
+.pesquisar {
+    display: none;
+}
+
+li, a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0px 40px 0 0px;
+    transition: all 0.3s;
+}
+
+header ul li:hover {
+    transform: scale(110%);
+}
+
+header ul a {
+    color: white;
+}
+
+/* .inicial {
+
+}
+ */
+
+.Inicial{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;     
+    align-items:center; 
+    background-color: #46DB70;
+}
+
+.Novidade_Inverno{
+    margin-top:65px;
+    height:400px;
+    width:80%;
+    display:flex;
+    justify-content:center;     
+    align-items:center;  
+    line-height:2px;
+}
+
+    .Novidade_2{
+        margin-top:0;
+    }
+
+    .Novidade_2 .Novidade_Inverno_Text button{
+        height:50px;
+        width:235px;
+    }
+
+    .Novidade_2 .Novidade_Inverno_Text{
+        text-align:right;
+    }
+
+    .Novidade_Inverno_Text{   
+        width:60%;
+        padding:0%;
+        color: #424242;
+    }
+
+    .Novidade_Inverno_Text p{
+        font-size:20px;
+    }
+
+    .Novidade_Inverno_Text h3{
+        font-size:90px;
+    }
+
+    .Novidade_Inverno_Text button{
+        background-color:#ffffff;
+        border:none;
+        height:50px;
+        width:200px;
+        font-size:20px;
+        border-radius:10vw;
+        transition: 0.3s;
+    }
+
+    .Novidade_Inverno_Text button:hover{
+        background-color: #D9D9D9;
+        cursor:pointer;
+    }
+    
+
+    .Novidade_Inverno_Img{
+        width:40%;
+        display:flex;
+        justify-content:center;     
+        align-items:center;  
+    }
+
+    .Novidade_Inverno_Img img{
+        width:300px;
+        height:300px;
+    }
+
+.Inicial_Produtos{
+    display: block;
+    height:330px;
+    width:100%;
+    background-color:white;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.Inicial_Produto{
+    height:fit-content;
+    width:28%;
+    border-radius:25px;
+    color:rgb(43, 43, 43);
+    padding:10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s all;
+}
+
+.Inicial_Produto:hover{
+    transform: scale(103%);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+}
+
+.Inicial_Produto button{
+    background-color:#FF6B6B;
+    border:none;
+    height:30px;
+    width:120px;
+    font-size:15px;
+    border-radius:30px;
+    transition: all 0.3s;
+}
+
+.Inicial_Produto button:hover{
+    background-color:#46DB70;
+    cursor:pointer;
+}
+
+.Inicial_Produto2 button:hover{
+    background-color:white;
+    cursor:pointer;
+}
+
+.Inicial_Produto1{
+    background-color: #D9D9D9;
+    display:flex;
+    align-items:center;
+}
+
+
+.Inicial_Produtos h3{
+    margin:0;
+    font-size:20px;
+}
+
+.Inicial_Produto2{
+    background-color: #FF6B6B;
+    display:flex;
+    align-items:center;
+}
+
+    .Inicial_Produto2 button{
+        background-color: #46DB70;
+    }
+
+    .Inicial_Produto2 h3{
+        color:white;
+    }
+
+    .Inicial_Produto2 p{
+        font-size:13px;
+    }
+
+.Inicial_Produto3{
+    display:flex;
+    align-items:center;
+    background-color:#D9D9D9;
+}
+
+.Inicial_Produto1, .Inicial_Produto3, p{
+    font-size:15px;
+}
+
+    .Inicial_Img{
+        width:50%;
+        height:170px;
+        display:flex;  
+        justify-content:center;   
+        align-items:center;     
+    }
+
+    .Inicial_Img img{
+        height:140px;
+        width:140px;
+    }
+
+    .Inicial_Text{
+        width:50%;
+        height:170px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding:5px;
+    }
+
+.produtos {
+    padding: 80px 10% 150px;
+    z-index: -100000;
+}
+
+.banner-produtos {
+    color: #111;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0px;
+    z-index: 1;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.banner-fundo {
+    background-image: url('https://img.freepik.com/free-photo/cute-fluffy-bear-toys_23-2149642374.jpg?w=2000');
+    filter: brightness(60%);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+ 
+.banner-produtos h1 {
+    font-size: 80px;
+    filter: brightness(100%);
+}
+
+.banner-produtos p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.grid-prdt-produtos {
+    margin-top: 300px;
+    display: grid;
+    grid-template-rows: repeat(2, fit-content);
+    grid-template-columns: repeat(4 , minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.produto-produtos {
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 20px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s;
+}
+
+.produto-produtos:hover {
+    transform: scale(103%);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.produto-produtos p {
+    margin: 10px;
+}
+
+.produto-comprar-produtos {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: #FC6C6C;
+    color: white;
+    border-radius: 2cm;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    transition: all 0.3s;
+}
+
+.produto-comprar-produtos:hover {
+    background-color: #46DB70;
+}
+
+.precos-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #606060;
+    font-size: 16px;
+}
+
+.img-comprar-produtos {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.img-prdt-produtos {
+    height: 220px;
+    width: 180px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.descricao-produtos {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-1-produtos {
+    background-image: url('https://mybtoys.com/wp-content/uploads/LB1904_PR.png');
+}
+
+.item-2-produtos {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZfN_ss81tcJsWl01ZHZkYC862O_OMd6zWQ&usqp=CAU');
+}
+
+.item-3-produtos {
+    background-image: url('https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_large.png?v=1631621515');
+}
+
+.item-4-produtos {
+    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696');
+}
+
+.colecoes {
+    padding: 80px 10%;
+}
+
+.banner-colecoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.banner-colecoes p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.banner-colecoes h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.grid-colecoes {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 3em;
+}
+
+.item-colecoes {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-colecoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.title-item-colecoes {
+    color: white;
+    background-color: #FC6C6C;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+    top: -45px;
+    left: -45px;
+}
+
+.title-item-colecoes h3 {
+    font-weight: 500;
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+}
+
+.desc-item-colecoes {
+    display: flex;
+    align-items: flex-end;
+    text-align: justify;
+    margin-top: 4%;
+    width: 60%;
+}
+
+.desc-item-colecoes p {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.img-content-colecoes {
+    width: 160px;
+    height: 160px;
+    background-image: url('https://m.media-amazon.com/images/I/41FqxBFJYGL._AC_UF1000,1000_QL80_.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+}
+
+/* @keyframes arcoiris {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.animation-arcoiris {
+    animation-name: arcoiris;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+ */
+
+ .about{
+    padding-top: 5%;
+}
+
+.tudojunto{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+ .parte1baner {
+    background-color: #ee8585da;
+    height: 45vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.281);
+}
+.textobanerabout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+    z-index: -1;
+    color: rgb(77, 38, 38);
+    font-size: 2rem;
+}
+
+.about h1 {
+    font-size: 50px;
+    opacity: 1;
+    mix-blend-mode: difference;
+}
+
+.about p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.descripitionabout{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    color: rgb(77, 38, 38);
+}
+
+
+.descripitionabout img{
+    float: left;
+    margin-right: 0;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.descripitionabout p{
+    float: left;
+    text-align: justify;
+}
+
+.historinha{
+    padding-left: 5%;
+    padding-top: 5%;
+
+}
+
+
+.historinha h3{
+    font-size: 24px;
+
+}
+
+
+.historinha p{
+    font-size: 22px;
+    text-align: justify;
+    text-indent: 1em;
+    
+}
+
+.historinha2{
+    padding-right: 5%;
+    align-items: justify;
+    padding-top: 5%;
+}
+
+.historinha2 p{
+    text-align: justify;
+    font-size: 22px;
+    text-indent: 1em;
+}
+
+
+.descripitionabout2{  
+    display:flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    color: rgb(77, 38, 38);
+}
+
+.descripitionabout2 img{
+    float: left;
+    margin-left: 0;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.valeu{
+    padding-top: 5%;
+    color:  rgb(56, 26, 26);
+    background-image: linear-gradient(#ff9b9b 25%, #FC6C6C);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    flex-direction: column;
+    width: fit-content;
+    margin: 3% auto;
+}
+
+.valeu h3{
+    font-size: 25px;
+}
+
+.valeu p{
+    font-size: 22px;
+    margin: 0;
+}
+
+
+
+@media (max-width: 900px){
+
+
+    .about h1 {
+        font-size: 35px;
+        opacity: 1;
+        mix-blend-mode: difference;
+ 
+    }
+
+    .about p {
+        font-size: 13px;
+        font-weight: 800;
+    }
+
+    .descripitionabout img{
+        width: 300px;
+    }
+
+    
+}
+
+footer {
+    background-color: #424242;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 5vw;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.footer li, a{
+    color:white;
+    padding:0px;
+}
+
+footer p{
+    left:0;
+}
+
+footer ul {
+    list-style: none;
+    margin:0%;
+    padding: 0%;
+}
+
+footer ul li {
+    line-height: 30px;
+    transition:0.3s;
+}
+
+footer ul li:hover {
+   opacity:50%;
+}
+
+.footer1{
+    flex-direction:column;
+}
+
+.footer h3{
+    margin:0px;
+}
+
+.Contatos2{
+    display:flex;
+}
+
+.Contatos2 img{
+    height:40px;
+    width:40px;
+    padding-right:25px;
+}
+
+.rede_social{
+    transition:0.3s;
+}
+
+.rede_social:hover{
+    cursor:pointer;
+    opacity:50%;
+}
+
+/*Mudanças para ipad!!!!!! (e o galaxy fold aberto) */
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        font-size: 4vw;
+    }
+
+    header nav {
+        display: none;
+    }
+    
+    .barra {
+        width: 50%;
+    }
+    
+    .menu {
+        display: block;
+        filter: invert(100%);
+        cursor: pointer;
+        height: 6vw;
+    }
+
+    .twitter {
+        display: none;
+    }
+
+    .grid-colecoes {
+        grid-template-columns: 100%;
+        gap: 4em;
+    }
+    
+    .content-colecoes {
+        margin-top: -70px;
+    }
+
+    .title-item-colecoes {
+        top: -55px;
+        left: -55px;
+    }
+
+    .title-item-colecoes h3 {
+        font-size: 1.5em;
+    }
+    
+    .desc-item-colecoes {
+        margin-top: 3%;
+        font-size: 1.2em;
+    }
+
+    .grid-prdt-produtos {
+        margin-top: 230px;
+        display: grid;
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-columns: repeat(auto-fit , minmax(180px, 1fr));
+        gap: 1em;
+    }
+    
+    .produto-produtos {
+        background-color: white;
+        border-radius: 20px;
+        height: fit-content;
+        padding: 10px;
+        line-height: 1;
+        font-size: 15px;
+    }
+
+    .img-prdt-produtos {
+        width: 100%;
+        height: 25vw;
+    }
+
+    .descricao-produtos {
+        height: 12vw;
+    }
+
+    .produto-comprar-produtos {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .img-comprar-produtos {
+        height: 4vw;
+        width: 4vw;
+    }
+
+    .produto-produtos p {
+        margin: 5px;
+        font-size: 2.5vw;
+    }
+
+    .banner-produtos {
+        height: 200px;
+    }
+
+    .banner-produtos h1 {
+        font-size: 10vw;
+        filter: brightness(100%);
+    }
+    
+    .banner-produtos p {
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .Inicial_Produtos{
+        flex-direction:column;
+        height:820px;
+    }
+
+    .Inicial_Produto{
+        width:88%;
+        height:fit-content;
+    }
+
+    .Inicial_Produto h3{
+        font-size:30px;
+    }
+
+    .Novidade_Inverno{
+        flex-direction:column;
+        height:fit-content;
+        text-align:center;
+        margin-top:115px;
+        margin-bottom:50px;
+        width:100%;
+    }
+    
+    .Novidade_2 .Novidade_Inverno_Text{
+        text-align:center;
+    }
+    
+    .Novidade_2{
+        margin-bottom:120px;
+        margin-top:0px;
+    }
+
+    .Novidade_Inverno p{
+        font-size:25px;
+        line-height:30px;
+    }
+
+    .Novidade_Inverno_Text{
+        margin:none;
+        width:100%;
+    }
+
+    .Inicial_Produto button{
+        height:50px;
+        width:120px;
+        font-size:17px;
+    }
+
+    .Novidade_Inverno_Img{
+        margin-top:40px;
+    }
+
+    footer {
+        flex-direction:column;
+    }
+
+    .about h1 {
+        font-size: 50px;
+        opacity: 1;
+        mix-blend-mode: difference;
+ 
+    }
+
+    .about p {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .descripitionabout img{
+        width: 300px;
+    }
+}
+
+/*Mudanças para o celular!!!!*/
+
+@media only screen and (max-width: 550px) {
+    header {
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+  
+    .menu {
+        height: 30px;
+    }
+
+    .barra {
+        display: none;
+    }
+
+    .colecoes {
+        padding: 50px 10%;
+    }
+
+    .banner-colecoes {
+    height: 120px;
+    }
+
+    .banner-colecoes h1 {
+        font-size: 3rem;
+    }
+
+    .grid-colecoes {
+        grid-template-columns: 100%;
+        gap: 3em;
+    }
+
+    .item-colecoes {
+        padding: 10%;
+    }
+
+    .desc-item-colecoes {
+        margin-top: 6%;
+        width: 100%;
+    }
+
+    .desc-item-colecoes p {
+        font-size: 0.6em;
+    }
+
+    .title-item-colecoes {
+        left: 0;
+        align-self: center;
+        text-align: center;
+    }
+
+    .title-item-colecoes h3 {
+        padding: 0.7rem 1.1rem;
+    }
+
+    .title-item-colecoes h3 {
+        font-size: 1.2em;
+    }
+
+    .content-colecoes {
+        flex-direction: column;
+    }
+
+    .produtos {
+        padding-top: 50px;
+    }
+
+    .banner-produtos h1 {
+        font-size: 12vw;
+    }
+
+    .grid-prdt-produtos {
+        margin-top: 150px;
+    }
+
+    .banner-produtos {
+        height: 120px;
+    }
+
+    .pesquisar {
+        display: flex;
+        height: 25px;
+        filter: invert(100%);
+    }
+
+    .selecionar {
+        width: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grid-prdt-produtos {
+        grid-template-columns: repeat(auto-fit , minmax(30vw, 1fr));
+    }
+
+    .img-prdt-produtos {
+        height: 40vw;
+        width: 100%;
+    }
+
+    .descricao-produtos {
+        height: 14vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .produto-comprar-produtos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    
+    .precos-produtos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .produto-produtos p {
+        font-size: 3.5vw;
+        margin: 2px;
+    }
+
+    .img-comprar-produtos {
+        filter: invert(100%);
+        height: 5vw;
+    }
+
+    .Novidade_Inverno h3{
+        font-size: 60px;
+    }
+
+    .Novidade_2 .Novidade_Inverno_Text{
+        text-align:center;
+    }
+    
+    .Novidade_2{
+        margin-top:0px;
+        margin-bottom:120px;
+    }
+
+    .Novidade_Inverno button{
+        height:45px;
+        width:170px;
+        font-size:17px;
+    }
+
+    .Inicial_Produto button{
+        height:50px;
+        width:120px;
+        font-size:17px;
+    }
+
+    .Inicial_Produto{
+        height:fit-content;
+        width:80%;
+    }
+
+    .Inicial_Produtos{
+        height:750px;
+    }
+
+    .Inicial_Produto h3{
+        font-size:20px;
+    }
+
+    .Inicial_Img img{
+        height:150px;
+        width:150px;
+    }
+
+    footer {
+        font-size: 3.5vw;
+        flex-direction:column;
+    }
+
+    .Novidade_1{
+        margin-top:90px;
+        margin-bottom:130px;
+    }
+
+    .Novidade_Inverno_Text p{
+        font-size:25px;
+        padding:2px;
+    }
+
+    .about h1 {
+        font-size: 38px;
+        opacity: 1;
+        mix-blend-mode: difference;
+ 
+    }
+
+    .about p {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .descripitionabout img{
+        width: 300px;
+        order: 1;
+        margin-top: 2%;
+    }
+
+    .descripitionabout{
+        display:flex;
+        flex-direction: column;
+        padding-top: 5%;
+        color: rgb(77, 38, 38);
+    }
+    
+    .descripitionabout p{
+        float: left;
+        text-align: justify;
+    }
+
+    .descripitionabout2{
+        display:flex;
+        flex-direction: column;
+        padding-top: 5%;
+        color: rgb(77, 38, 38);
+    }
+
+     .descripitionabout2 img{
+        float: left;
+        width: 350px;
+    }
+
+    .descripitionabout2 p{
+        float: left;
+        text-align: justify;
+    }
+
+    .historinha{
+        padding-left: 0%;
+    };
+
+    .historinha2{
+        padding: 0%;
+    }
+
+    .historinha h3{
+        text-align: center;
+    }
+    
+}
+
+/*Só para o fold!!!!!!!!! (morra fold) */
+
+@media only screen and (max-width: 300px) {
+    .Novidade_Inverno h3{
+        font-size:45px;
+    }
+
+    .Novidade_Inverno p{
+        font-size:18px;
+    }
+
+    .Novidade_Inverno_Img img{
+        height:200px;
+        width:200px;
+    }
+
+    .Inicial_Img img{
+        height:100px;
+        width:100px;
+    }
+
+    .Inicial_Produto h3{
+        font-size:17px;
+    }
+
+    .Inicial_Produtos{
+        height:900px;
+    }
+
+    .Inicial_Produto button{
+        height:38px;
+        width:80px;
+        font-size:14px;
+    }
+
+    .Inicial_Text{
+        height:200px;
+    }
+
+    footer{
+        flex-direction:column;
+        height: fit-content;
+        font-size:10px;
+    }
+
+    footer h3{
+        font-size:20px;
+    }
+
+    .footer li, a{
+        font-size:15px;
+    }
+
+}
+
+::-webkit-scrollbar{
+    width:18px;
+    background-color: #424242;
+}
+
+::-webkit-scrollbar-thumb{
+    width:10px;
+    background-color: #D9D9D9;
+    border:solid #424242;
+    border-right:none;
+}
