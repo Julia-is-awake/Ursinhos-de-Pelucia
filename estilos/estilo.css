@@ -704,9 +704,6 @@ header ul a {
 }
  */
 
- .about{
-    padding-top: 5%;
-}
 
 .tudojunto{
     padding-left: 10%;
@@ -714,6 +711,7 @@ header ul a {
 }
  .parte1baner {
     background-color: #ee8585da;
+    padding-top: 5%;
     height: 45vh;
     width: 100%;
     position: relative;
