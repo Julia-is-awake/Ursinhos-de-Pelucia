@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
 
 
 .animate {
     animation-duration: 1s;
     animation-fill-mode: both;
+}
+
+.animate.delay--0-3s {
+    animation-delay: 0.3s;
+}
+
+.animate.delay--0-5s {
+    animation-delay: 0.5s;
 }
 
 @keyframes slideInTop {
@@ -18,8 +26,42 @@
     }
 }
 
-.animate.slide-top {
+.animate.slideInTop {
     animation-name: slideInTop;
+    animation-timing-function: ease;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.animate.slideInLeft {
+    animation-name: slideInLeft;
+    animation-timing-function: ease;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.animate.slideInRight {
+    animation-name: slideInRight;
     animation-timing-function: ease;
 }
 
@@ -447,7 +489,7 @@ header ul a {
 }
 
 .item-2-produtos {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZfN_ss81tcJsWl01ZHZkYC862O_OMd6zWQ&usqp=CAU');
+    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696');
 }
 
 .item-3-produtos {
@@ -455,7 +497,22 @@ header ul a {
 }
 
 .item-4-produtos {
-    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRfIMirzkOapedzY0OqcNmRUWvNoblrGOuRg&usqp=CAU');
+}
+
+.item-5-produtos {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmVEe0WUwX4o_oiG-h8Xqz4t-M8pD79TDFA&usqp=CAU');
+}
+.item-6-produtos {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbPg-b75aLzk5iXjTaR9Mi46udiJRP979JA&usqp=CAU');
+}
+
+.item-7-produtos {
+    background-image: url('https://superlegalbrinquedos.vteximg.com.br/arquivos/ids/185087-800-800/F0044-7_Pelucia_Procurando_Nemo_Tartaruga_Esguicho_35_cm_Disney_Fun_1.jpg?v=637429420795900000');
+}
+
+.item-8-produtos {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9UF82C298jPy5f_UOnHC6Pr5zKE6k_Dm_dw&usqp=CAU');
 }
 
 .colecoes {
@@ -488,12 +545,23 @@ header ul a {
 }
 
 .item-colecoes {
-    background-color: white;
     border-radius: 20px;
     padding: 5%;
     display: flex;
     flex-direction: column;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: translateY(0px);
+    color: white;
+    background-size: cover;
+
+    transition: all 0.3s;
 }
+
+.item-colecoes:hover {
+    transform: translateY(-15px);
+}
+
 
 .content-colecoes {
     display: flex;
@@ -503,8 +571,8 @@ header ul a {
 }
 
 .title-item-colecoes {
-    color: white;
-    background-color: #FC6C6C;
+    background-color: white;
+    color: black;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -512,6 +580,7 @@ header ul a {
     position: relative;
     top: -45px;
     left: -45px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 .title-item-colecoes h3 {
@@ -537,10 +606,80 @@ header ul a {
 .img-content-colecoes {
     width: 160px;
     height: 160px;
-    background-image: url('https://m.media-amazon.com/images/I/41FqxBFJYGL._AC_UF1000,1000_QL80_.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 85%;
+}
+
+.item-1-colecoes .content-colecoes .img-content-colecoes {
+    background-image: url('https://cdn.shopify.com/s/files/1/1176/5302/products/flipemz_snowman_polarbear_bear_5_1000x.png?v=1632333229');
+    background-size: 100%;
+}
+
+.item-1-colecoes {
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2021/05/polo-norte.jpeg');
+}
+
+.item-2-colecoes {
+    background-image: url('https://img.freepik.com/fotos-gratis/praia-tropical_74190-188.jpg');
+    background-position: bottom;
+}
+
+.item-2-colecoes .content-colecoes .img-content-colecoes {
+    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Crit_Crab_Plush-1_1000x.png.webp?v=1633008103');
+    background-size: 110%;
+}
+
+.item-3-colecoes {
+    background-image: url('https://wallpapercave.com/wp/wp6874284.jpg');
+    color: white;
+}
+
+.item-3-colecoes .content-colecoes .img-content-colecoes {
+    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/unnamed_0096cfae-8131-402c-88a7-06c1e8c9ac20_1000x.png.webp?v=1661900981');
+}
+
+.item-4-colecoes {
+    background-image: url('https://www.educacaoetransformacao.com.br/wp-content/uploads/2018/02/atividades-dia-do-circo.jpg');
+    background-position: bottom;
+}
+
+.blur-colecoes {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.item-4-colecoes .title-item-colecoes {
+    background-color: white;
+    color: black;
+}
+
+.item-4-colecoes .content-colecoes .img-content-colecoes {
+    background-image: url('https://uploads-ssl.webflow.com/6058b2c91d0fcb92ca9cca7c/6058b2c91d0fcbfe969ccaf2_33910-6-toy-clipart-min.png');
+    background-size: 100%;
+}
+
+.item-5-colecoes {
+    background-image: url('https://img.freepik.com/free-vector/large-school-building-scene_1308-32058.jpg?w=2000');
+    background-position: bottom;
+}
+
+.item-5-colecoes .content-colecoes .img-content-colecoes {
+    background-image: url('imagens/lapis.png');
+    background-size: 100%;
+}
+
+.item-6-colecoes {
+    background-image: url('https://img.freepik.com/fotos-premium/paisagem-dos-desenhos-animados-do-pantano-fundo-da-floresta-com-pantano-e-lago-ai_76964-6600.jpg');
+}
+
+.item-6-colecoes .content-colecoes .img-content-colecoes {
+    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/unnamed_a26818e0-845b-4f44-b779-b92dd6b0afc6_1000x.png.webp?v=1669655797');
 }
 
 /* @keyframes arcoiris {
@@ -566,8 +705,8 @@ header ul a {
 }
 
 .tudojunto{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
  .parte1baner {
     background-color: #ee8585da;
@@ -594,17 +733,21 @@ header ul a {
     z-index: -1;
     color: rgb(77, 38, 38);
     font-size: 2rem;
+    
 }
 
+
+
 .about h1 {
-    font-size: 50px;
+    font-size: 1.5em;
     opacity: 1;
     mix-blend-mode: difference;
 }
 
 .about p {
-    font-size: 20px;
+    font-size: 0.5em;
     font-weight: 500;
+    
 }
 
 .descripitionabout{
@@ -612,68 +755,77 @@ header ul a {
     justify-content: space-around;
     padding-top: 5%;
     color: rgb(77, 38, 38);
+    line-height: 2em;
 }
 
 
 .descripitionabout img{
     float: left;
     margin-right: 0;
-    border-radius: 10px;
-    width: 500px;
+    border-radius: 1em;
+    width: 60vh;
+    height: 100%;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 2%;
 }
 
-.descripitionabout p{
+.descripitionabout2 img{
     float: left;
-    text-align: justify;
+    margin-right: 0;
+    border-radius: 1em;
+    width: 60vh;
+    height: 100%;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 2%;
 }
-
-.historinha{
-    padding-left: 5%;
-    padding-top: 5%;
-
-}
-
-
-.historinha h3{
-    font-size: 24px;
-
-}
-
-
-.historinha p{
-    font-size: 22px;
-    text-align: justify;
-    text-indent: 1em;
-    
-}
-
-.historinha2{
-    padding-right: 5%;
-    align-items: justify;
-    padding-top: 5%;
-}
-
-.historinha2 p{
-    text-align: justify;
-    font-size: 22px;
-    text-indent: 1em;
-}
-
 
 .descripitionabout2{  
     display:flex;
     justify-content: space-around;
     padding-top: 5%;
     color: rgb(77, 38, 38);
+    line-height: 2em;
 }
 
-.descripitionabout2 img{
+.descripitionabout p{
     float: left;
-    margin-left: 0;
-    border-radius: 10px;
-    width: 500px;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    line-height: 2em;
+}
+
+.historinha{
+    padding-left: 5%;
+    padding-top: 6%;
+
+}
+
+
+.historinha h3{
+    font-size: 2.5ch;
+
+}
+
+
+.historinha p{
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 1.2em;
+    line-height: 2.1em;
+    
+}
+
+.historinha2{
+    padding-right: 5%;
+    align-items: justify;
+    padding-top: 1%;
+}
+
+.historinha2 p{
+    text-align: justify;
+    font-size: 1.1em;
+    text-indent: 1.2em;
+    line-height: 2.1em;
+    padding-top: 10%;
 }
 
 .valeu{
@@ -681,7 +833,7 @@ header ul a {
     color:  rgb(56, 26, 26);
     background-image: linear-gradient(#ff9b9b 25%, #FC6C6C);
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -692,37 +844,19 @@ header ul a {
 }
 
 .valeu h3{
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 .valeu p{
-    font-size: 22px;
+    font-size: 1.2em;
     margin: 0;
+    text-align: center;
+    line-height: 2em;
 }
 
 
 
-@media (max-width: 900px){
 
-
-    .about h1 {
-        font-size: 35px;
-        opacity: 1;
-        mix-blend-mode: difference;
- 
-    }
-
-    .about p {
-        font-size: 13px;
-        font-weight: 800;
-    }
-
-    .descripitionabout img{
-        width: 300px;
-    }
-
-    
-}
 
 footer {
     background-color: #424242;
@@ -812,6 +946,10 @@ footer ul li:hover {
         display: none;
     }
 
+    .blur-colecoes {
+        margin-top: 5px;
+    }
+
     .grid-colecoes {
         grid-template-columns: 100%;
         gap: 4em;
@@ -832,7 +970,7 @@ footer ul li:hover {
     
     .desc-item-colecoes {
         margin-top: 3%;
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     .grid-prdt-produtos {
@@ -957,15 +1095,96 @@ footer ul li:hover {
 
     .about p {
         font-size: 18px;
-        font-weight: 800;
+        font-weight: 500;
     }
 
     .descripitionabout img{
         width: 300px;
     }
 }
+@media only screen and (max-width: 820px) {
+    
 
-/*Mudanças para o celular!!!!*/
+    .about h1 {
+        font-size: 1em;
+        opacity: 1;
+        mix-blend-mode: difference;
+ 
+    }
+
+    .about p {
+        font-weight: 500;
+    }
+
+    .descripitionabout img{
+        width: 400px;
+        order: 1;
+        margin-top: 2%;
+        align-self: center;
+
+    }
+
+    .descripitionabout{
+        display:flex;
+        flex-direction: column;
+        padding-top: 3%;
+        color: rgb(77, 38, 38);
+    }
+    
+    .descripitionabout p{
+        float: left;
+        text-align: justify;
+    }
+
+    .descripitionabout2{
+        display:center;
+        flex-direction: column;
+        padding-top: 2%;
+        color: rgb(77, 38, 38);
+    }
+
+     .descripitionabout2 img{
+        display: flex;
+        align-self: center;
+        width: 400px;
+    }
+
+    .descripitionabout2 p{
+        float: left;
+        text-align: justify;
+        padding-top: 1%;
+    }
+
+    .historinha{
+        padding-left: 0%;
+    }
+
+    .historinha h1{
+        font-size: 1.3em;
+    }
+    
+    .historinha p{
+        padding: 0%;
+    }
+
+    .historinha2{
+        padding: 0%;
+    }
+
+    .historinha h3{
+        text-align: center;
+    }
+
+    .valeu h3{
+        font-size: 1.2em;
+    }
+
+    .valeu p{
+        font-size: 0.9em;
+    }
+}
+
+    
 
 @media only screen and (max-width: 550px) {
     header {
@@ -982,6 +1201,10 @@ footer ul li:hover {
 
     .barra {
         display: none;
+    }
+
+    .blur-colecoes {
+        margin-top: 18px;
     }
 
     .colecoes {
@@ -1163,19 +1386,18 @@ footer ul li:hover {
     }
 
     .about h1 {
-        font-size: 38px;
+        font-size: 1.2em;
         opacity: 1;
         mix-blend-mode: difference;
  
     }
-
+    
     .about p {
-        font-size: 18px;
-        font-weight: 800;
+        font-weight: 500;
     }
 
     .descripitionabout img{
-        width: 300px;
+        width: 275px;
         order: 1;
         margin-top: 2%;
     }
@@ -1201,31 +1423,38 @@ footer ul li:hover {
 
      .descripitionabout2 img{
         float: left;
-        width: 350px;
+        width: 275px;
     }
 
     .descripitionabout2 p{
         float: left;
         text-align: justify;
     }
-
-    .historinha{
-        padding-left: 0%;
-    };
-
-    .historinha2{
-        padding: 0%;
-    }
-
     .historinha h3{
         text-align: center;
+    }
+
+    .valeu h3{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .valeu p{
+        font-size: 0.8em;
+        line-height: normal;
     }
     
 }
 
 /*Só para o fold!!!!!!!!! (morra fold) */
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 360px) {
+
+    .blur-colecoes {
+        margin-top: -6px;
+    }
+
+
     .Novidade_Inverno h3{
         font-size:45px;
     }
@@ -1276,6 +1505,46 @@ footer ul li:hover {
         font-size:15px;
     }
 
+    .textobanerabout{
+        padding-top: 10%;
+    }
+    .textobanerabout h1{
+        font-size: 1em;
+    }
+
+    .textobanerabout p{
+        font-size: 0.38em;
+    }
+
+    .historinha h3{
+        font-size: 1.1em;
+    }
+
+    .historinha p{
+        font-size: 0.9em;
+    }
+
+    .historinha2 p{
+        font-size: 0.9em;
+    }
+    
+    .descripitionabout img{
+        width: 190px;
+    }
+
+    .descripitionabout2 img{
+        width: 190px;
+        margin-bottom: 10%;
+    }
+
+    .valeu h3{
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .valeu p{
+        font-size: 0.8em;
+    }
 }
 
 ::-webkit-scrollbar{
