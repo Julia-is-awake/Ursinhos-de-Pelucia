@@ -1,5 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
 
+ 
+ *{
+        user-select: none;
+ }
 
 .animate {
     animation-duration: 1s;
@@ -732,8 +736,12 @@ header ul a {
     line-height: 1;
     z-index: -1;
     color: rgb(77, 38, 38);
-    font-size: 2rem;
+    font-size: 2.5em;
     
+}
+
+.textobanerabout p{
+    font-size: 2em;
 }
 
 
@@ -801,13 +809,13 @@ header ul a {
 
 
 .historinha h3{
-    font-size: 2.5ch;
+    font-size: 2.7ch;
 
 }
 
 
 .historinha p{
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-align: justify;
     text-indent: 1.2em;
     line-height: 2.1em;
@@ -822,14 +830,13 @@ header ul a {
 
 .historinha2 p{
     text-align: justify;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-indent: 1.2em;
     line-height: 2.1em;
     padding-top: 10%;
 }
 
 .valeu{
-    padding-top: 5%;
     color:  rgb(56, 26, 26);
     background-image: linear-gradient(#ff9b9b 25%, #FC6C6C);
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
@@ -837,10 +844,10 @@ header ul a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    padding: 5% 10% 5% 10%;
     flex-direction: column;
     width: fit-content;
-    margin: 3% auto;
+    margin: 5% auto;
 }
 
 .valeu h3{
@@ -853,10 +860,6 @@ header ul a {
     text-align: center;
     line-height: 2em;
 }
-
-
-
-
 
 footer {
     background-color: #424242;
