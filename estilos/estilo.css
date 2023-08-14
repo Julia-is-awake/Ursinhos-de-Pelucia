@@ -606,6 +606,37 @@ header ul a {
     font-weight: 500;
 }
 
+.cores {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cor {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+
+    transition: all 0.3s;
+}
+
+.cor:hover {
+    transform: scale(120%);
+}
+
+.cor1 {
+    background-color: rgb(55, 177, 55);
+}
+
+.cor2 {
+    background-color: rgb(231, 81, 81);
+}
+
+.cor3 {
+    background-color: rgb(63, 88, 196);
+}
+
 .img-content-colecoes {
     width: 160px;
     height: 160px;
@@ -858,6 +889,64 @@ header ul a {
     line-height: 2em;
 }
 
+/* #compra {
+    padding: 80px 10%;
+}
+
+#compra-produto {
+    background-color: white;
+    margin-top: 50px;
+    height: fit-content;
+}
+
+#compra-esquerda {
+    width: fit-content;
+}
+ */
+ 
+.Carrocel{
+    width:100%;
+    height:500px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.Carrocel2{
+    width:80%;
+    height:500px;
+    background-color:rgb(214, 214, 131);
+}
+
+.Slide{
+    position:absolute;
+    inset:0;
+    opacity:0;
+}
+
+.Slide[data-active]{
+    opacity:1;
+}
+
+.Slide > img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.Carrocel-Button{
+    position:absolute;
+    background:none;
+    border:none;
+    font-size:14px;
+    z-index:2;
+    top:50%;
+    transform: traslateY(-50%);
+}
+
+/* .Carrossel  */
+
 footer {
     background-color: #424242;
     color:white;
@@ -919,6 +1008,7 @@ footer ul li:hover {
     cursor:pointer;
     opacity:50%;
 }
+
 
 /*Mudanças para ipad!!!!!! (e o galaxy fold aberto) */
 
@@ -1491,6 +1581,11 @@ footer ul li:hover {
         height:200px;
     }
 
+    .cor {
+        height: 10px;
+        width: 10px;
+    }
+    
     footer{
         flex-direction:column;
         height: fit-content;
