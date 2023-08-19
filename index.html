@@ -5,10 +5,12 @@
         <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
         <meta name="viewport" content="width=device-width, inicial-scale=1.0">
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4424/4424437.png">
+        <meta name="Keywords" content="pelucias, loja de pelucias, plush, plush store, pelucias boas, pelucias coloridas, LOJA DE PELUCIA, PELUCIA">
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <header>
-            <h2 class="logo animate slideInTop" onclick="location.href='index.html'">PLEASE plush</h2>
+            <h2 class="logo animate slideInTop" onclick="location.href='index.html'">plush plush</h2>
             <form action="" class="barra">
                 <input type="text" placeholder="Pesquisar" name="q">
                 <button type="submit"><img src="estilos/imagens/pesquisar.png"></button>
@@ -24,7 +26,18 @@
             <div class="selecionar">
                 <img src="estilos/imagens/pesquisar.png" class="pesquisar">
                 <img src="estilos/imagens/menu.png" class="menu" onclick="location.href='#'">
-                <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter">
+                <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="menuShow()" class="twitter">
+            </div>
+
+            <div class="menu-responsivo">
+                <ul>
+                    <li class="animate slideInTop"><a href="produtos.html">Produtos</a></li>
+                    <li class="animate slideInTop"><a href="colecoes.html">Coleções</a></li>
+                    <li class="animate slideInTop"><a href="about.html">Sobre Nós</a></li>
+                </ul>
+                <div class="twitter-responsivo">
+                    <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter">
+                <div>
             </div>
         </header>
 
@@ -95,7 +108,7 @@
                 </div>
 
                 <div class="Novidade_Inverno_Text">
-                    <p>Aproveite aqui as ótimas de: </p>
+                    <p>Aproveite aqui as ótimas promoções do mês de</p>
                     <h3>AGOSTO</h3>
                     <button>Conferir Promoções</button>
                     </div>
@@ -147,29 +160,17 @@
                 </div>
 
             </div>
-
-            <div class="Carrocel">
-                <button class="Caroucel-Button Prev">&#8656;</button>
-                <button class="Caroucel-Button Next">&#8658;</button>
-                <div class="Carrocel2">
-                    <ul>
-                        <li class="Slide">
-                            <img src="https://rmconservancy.org/wp-content/uploads/2021/03/Fawn.png">
-                        </li>
-                        <li class="Slide">
-                            <img src="https://rmconservancy.org/wp-content/uploads/2021/03/Fawn.png">
-                        </li>
-                        <li class="Slide">
-                            <img src="https://rmconservancy.org/wp-content/uploads/2021/03/Fawn.png">
-                        </li>
-                        <li class="Slide">
-                            <img src="https://rmconservancy.org/wp-content/uploads/2021/03/Fawn.png">
-                        </li>
-                    </ul>
-                </div>
-            </div>
     
         </main>
+        
+        <div class="CarrocelFundo">
+        <div class="Carrocel">
+            <button class="CarrocelButton Voltar" onclick="slider(-1)">&#8656;</button>
+            <div class="CarrocelMiddle"></div>
+            <button class="CarrocelButton Avançar" onclick="slider(+1)">&#8658;</button>
+        </div>
+        </div>
+
         <footer>
 
             <div class="footer1">

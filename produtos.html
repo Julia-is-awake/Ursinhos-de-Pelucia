@@ -5,8 +5,14 @@
         <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
         <meta name="viewport" content="width=device-width, inicial-scale=1.0">
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4424/4424437.png">
+        <meta name="Keywords" content="pelucias, loja de pelucias, plush, plush store, pelucias boas, pelucias coloridas, LOJA DE PELUCIA, PELUCIA">
     </head>
     <body>
+        <script src="script.js">
+            function trocar(f){
+                document.getElementById("imagem-do-produto").src = f;
+            };
+        </script>
         <header>
             <h2 class="logo animate slideInTop" onclick="location.href='index.html'">plush plush</h2>
             <form action="" class="barra">
@@ -40,26 +46,35 @@
 
             <div class="grid-prdt-produtos">
 
-                <div onclick="location.href='#'" class="produto-produtos">
+                <div class="produto-produtos">
 
                     <div class="cores">
-                        <div class="cor cor1"></div>
+                        <div class="cor cor1" onclick="trocar('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696')"></div>
                         <div class="cor cor2"></div>
                         <div class="cor cor3"></div>
                     </div>
 
-                    <div class="img-prdt-produtos item-1-produtos"></div>
+                    <div onclick="location.href='#'"><img src="https://mybtoys.com/wp-content/uploads/LB1904_PR.png" height="200px" width="200px" id="imagem-do-produto"></div>
 
                     <div class="descricao-produtos">
                         <div class="titulo-produtos">
                             <p>Sapinho fofo</p>
                         </div>
 
-                        <div class="precos-produtos">
-                            <p>55,00</p>
-                            <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                        <div class="precos-content-produtos">
+
+                            <div class="precos-produtos">
+                                <p>55,00</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+                            
+                            <div class="contador-produtos">
+                                <button class="btn decrease"><img src="estilos/imagens/menos.png"></button>
+                                <span id="value">0</span>
+                                <button class="btn increase"><img src="estilos/imagens/mais.png"></button>
+                            </div>
+
                         </div>
-                    
                     </div>
                     
                 </div>
@@ -79,11 +94,13 @@
                             <p>Gatinho Vermelho</p>
                         </div>
 
-                        <div class="precos-produtos">
-                            <p>42,90</p>
-                            <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                        <div class="precos-content-produtos">
+                            <div class="precos-produtos">
+                                <p>42,90</p>
+                                <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
+                            </div>
+                            
                         </div>
-
                     </div>
 
                 </div>
