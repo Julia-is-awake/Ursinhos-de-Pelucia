@@ -1,6 +1,4 @@
-
 const imagens = ['estilos/imagens/Juntos.png', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg', 'https://t3.ftcdn.net/jpg/03/29/09/42/360_F_329094223_QHjakaco7v8zxDRR3EDqpBvJVJHDCPYT.jpg', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg' ]
-
 
 var indexImagem = 0;
 const unidade = 100/imagens.length
@@ -35,13 +33,7 @@ function slider (number) {
     console.log("bar: " + Math.round(margem))
     console.log("unidade " + unidade)
     document.querySelector('.Indicador2').style.marginLeft = `${Math.round(margem)}%`
- 
-    
-
-
 }
-
-
 
 function cores (number, cores) {
     var valorCor;
@@ -62,9 +54,6 @@ function cores (number, cores) {
     }
     document.getElementsByClassName(`item-${number}-produtos`)[0].style.filter = `sepia(100%) hue-rotate(${valorCor}deg) saturate(700%)`;
 }
-
-
-
 
 /* botao1.addEventListener('click', () => {
     
@@ -90,9 +79,6 @@ const img1 = document.querySelector
 botao1.addEventListener('click', () => {
     
 })
-
-
-
 
 /* //setar contador inicial
 let count = 0;
