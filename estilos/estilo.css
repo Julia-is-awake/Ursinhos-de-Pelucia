@@ -522,36 +522,21 @@ header ul a {
    justify-content: space-between;
 }
 
-.item-1-produtos {
-   background-image: url('https://mybtoys.com/wp-content/uploads/LB1904_PR.png');
-}
+.item-1-produtos {background-image: url('https://mybtoys.com/wp-content/uploads/LB1904_PR.png')}
 
-.item-2-produtos {
-   background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696');
-}
+.item-2-produtos {background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696')}
 
-.item-3-produtos {
-   background-image: url('https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_large.png?v=1631621515');
-}
+.item-3-produtos {background-image: url('https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_large.png?v=1631621515')}
 
-.item-4-produtos {
-   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRfIMirzkOapedzY0OqcNmRUWvNoblrGOuRg&usqp=CAU');
-}
+.item-4-produtos {background-image: url('imagens/pato.png')}
 
-.item-5-produtos {
-   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmVEe0WUwX4o_oiG-h8Xqz4t-M8pD79TDFA&usqp=CAU');
-}
-.item-6-produtos {
-   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbPg-b75aLzk5iXjTaR9Mi46udiJRP979JA&usqp=CAU');
-}
+.item-5-produtos {background-image: url('imagens/girafa.png')}
 
-.item-7-produtos {
-   background-image: url('https://superlegalbrinquedos.vteximg.com.br/arquivos/ids/185087-800-800/F0044-7_Pelucia_Procurando_Nemo_Tartaruga_Esguicho_35_cm_Disney_Fun_1.jpg?v=637429420795900000');
-}
+.item-6-produtos {background-image: url('imagens/jaré.png')}
 
-.item-8-produtos {
-   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9UF82C298jPy5f_UOnHC6Pr5zKE6k_Dm_dw&usqp=CAU');
-}
+.item-7-produtos {background-image: url('imagens/tartuga.png')}
+
+.item-8-produtos {background-image: url('imagens/coiote.png')}
 
 .colecoes {
    padding: 80px 10%;

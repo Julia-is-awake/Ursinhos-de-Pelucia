@@ -37,6 +37,36 @@ function slider (number) {
 }
 
 
+
+function cores (number, cores) {
+    var valorCor;
+    switch (cores) {
+        case "vermelho":
+            valorCor = 90;
+            break;
+        case "verde":
+            valorCor = 300;
+            break;
+        case "azul":
+            valorCor = 190;
+            break;
+    
+        default:
+            valorCor = 0;
+            break;
+    }
+    document.getElementsByClassName(`item-${number}-produtos`)[0].style.filter = `sepia(100%) hue-rotate(${valorCor}deg) saturate(700%)`;
+}
+
+
+
+
+/* botao1.addEventListener('click', () => {
+    
+})
+ */
+
+
    /* if (indexImagem === 0) {
         indicador2.style.width = '33%';
     } else if (indexImagem === 1) {
