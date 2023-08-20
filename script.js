@@ -5,28 +5,51 @@ function trocar (f) {
 const imagens = ['https://c1.wallpaperflare.com/preview/570/887/752/emotions-toys-teddy-bear-soft-toy.jpg', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg', 'https://t3.ftcdn.net/jpg/03/29/09/42/360_F_329094223_QHjakaco7v8zxDRR3EDqpBvJVJHDCPYT.jpg']
 
 var indexImagem = 0;
+const unidade = 100/imagens.length
+var margem = 0;
 
 function slider (number) {
-    console.log("Oi VIni!")
-    console.log("O Tamanho da lista é " + imagens.length)
     indexImagem += number
-    console.log("O index é " + indexImagem)
+    if(number > 0) 
+    {
+        margem = margem + unidade 
+    }
+    else 
+    {
+        margem = margem - unidade
+    }
+
     if(indexImagem < 0)
     {
-        console.log("Entro no if :D ")
         indexImagem = imagens.length -1
-        console.log("O index é " + indexImagem)
+        margem = 100 - unidade
     }
     if(indexImagem >= imagens.length)
     {
-        console.log("Entro no else")
         indexImagem = 0
-        console.log("O index é " + indexImagem)
-
+        margem = 0
     }
+
     document.getElementsByClassName('Carrocel')[0].style.backgroundImage = `url('${imagens[indexImagem]}')`
-    console.log(indexImagem)
+    console.log("indwx: " + indexImagem)
+    console.log("bar: " + Math.round(margem))
+
+    document.querySelector('.Indicador2').style.marginLeft = `${Math.round(margem)}%`
+
+
 }
+
+
+   /* if (indexImagem === 0) {
+        indicador2.style.width = '33%';
+    } else if (indexImagem === 1) {
+        indicador2.style.width = '66%';
+    } else if (indexImagem === 2) {
+        indicador2.style.width = '100%';
+    }
+
+  }
+
 
 /* //setar contador inicial
 let count = 0;
