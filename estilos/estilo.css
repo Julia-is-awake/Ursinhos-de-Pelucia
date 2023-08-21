@@ -109,6 +109,20 @@ header {
    height: 80px;
 }
 
+.cabecalho {
+    display: flex;
+    position: absolute;
+    background-color: #FC6C6C;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    gap: 1em;
+    height: 80px;
+}
+
 .barra {
    display: flex;
    align-items: center;
@@ -235,9 +249,13 @@ header ul a {
    }
 
    .Novidade_Inverno_Text button:hover{
-       background-color: #D9D9D9;
-       cursor:pointer;
+        scale:0.8;
+        cursor:pointer;
    }
+
+   .Novidade_Inverno_Text button:active{
+        background-color: #bbbbbb;
+    }
    
 
    .Novidade_Inverno_Img{
@@ -288,13 +306,20 @@ header ul a {
 }
 
 .Inicial_Produto button:hover{
-   background-color:#46DB70;
    cursor:pointer;
+   scale:0.8;
+}
+
+.Inicial_Produto button:active{
+    background-color:#46DB70;
 }
 
 .Inicial_Produto2 button:hover{
-   background-color:white;
    cursor:pointer;
+}
+
+.Inicial_Produto2 button:active{
+    background-color:#ffffff;
 }
 
 .Inicial_Produto1{
@@ -926,19 +951,23 @@ header ul a {
 
 .Carrocel{
    width:100%;
-   height:500px;
-   display:flex;
-   margin:auto;
-   background-image:url("https://e0.pxfuel.com/wallpapers/636/720/desktop-wallpaper-bt21-plush-stuffed-animal-names-teddy-bear-names-cute-plush-cute-plushie.jpg");
+   height:350px;
+   background-image:url('imagens/Wallpaper01.png');
    background-size:cover;
-   align-items:center;
-   flex-direction:column;
-   justify-content:space-around;
+   margin-top:10px;
+}
+
+.CarrocelContent{
+    margin-top:auto;
+    margin-bottom:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
 
 .CarrocelButton{
-   width:65px;
-   height:65px;
+   width:45px;
+   height:35px;
    font-size:23px;
    border-radius:23px;
    border:none;
@@ -948,9 +977,9 @@ header ul a {
 .BotoesCarrocel{
     width:80%;
     display:flex;
-    justify-content:space-around;
     align-items:center;
-    margin-top:400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .CarrocelButton:hover{
@@ -962,11 +991,29 @@ header ul a {
    background-color:rgb(139, 139, 139);
 }
 
+.CarrocelFundo{
+    width:100%;
+    height:480px;
+    background-image: url('imagens/Wallpaper01.png');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.CarrocelFundo2{
+    width:100%;
+    height:480px;
+    display:flex;
+    flex-direction:column;
+    background-color:rgba(165, 40, 50, 0.8);
+    justify-content:space-evenly;
+}
+
 .Indicador{
     background-color:white;
     height:35px;
     width:100%;
     border-radius:30px;
+    margin:10px;
 }
 
 .Indicador2{
@@ -1042,7 +1089,14 @@ footer ul li:hover {
    opacity:50%;
 }
 
+.selecionar button{
+    display:none;
+    cursor:pointer;
+}
 
+.mobile-menu {
+    display: none;
+}
 /*Mudanças para ipad!!!!!! (e o galaxy fold aberto) */
 
 @media only screen and (max-width: 1000px) {
@@ -1225,16 +1279,38 @@ footer ul li:hover {
        width: 300px;
    }
 
-   .menu-responsivo ul{
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       padding-bottom: 1rem;
-   }
+   .selecionar button{
+    display: block;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    }
 
-   .open{
-       display: block;
-   }
+    .mobile-menu {
+        margin-top: 200px;
+        position: absolute;
+        background-color: #FC6C6C;
+        border-radius: 0 0 0 20px;
+        right: 0;
+        z-index: 100;
+        padding: 1em;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .open {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile-menu .selecionar .twitter
+    {
+        display: flex;
+    }
 }
 @media only screen and (max-width: 820px) {
    
@@ -1581,23 +1657,10 @@ footer ul li:hover {
        line-height: normal;
    }
 
-   .Carrocel{
-        height:350px;
+   .mobile-menu{
+    margin-top: 215px;
    }
 
-   .BotoesCarrocel{
-        margin-top:250px;
-        width:90%;
-   }
-
-   .CarrocelButton{
-        height:50px;
-   }
-
-   .CarrocelFundo{
-        height:450px;
-   }
-   
 }
 
 /*Só para o fold!!!!!!!!! (morra fold) */
@@ -1702,23 +1765,6 @@ footer ul li:hover {
 
    .valeu p{
        font-size: 0.8em;
-   }
-
-   .Carrocel{
-        height:250px;
-   }
-
-   .BotoesCarrocel{
-        margin-top:150px;
-        width:90%;
-   }
-
-   .CarrocelButton{
-        height:40px;
-   }
-
-   .CarrocelFundo{
-        height:350px;
    }
    
 }

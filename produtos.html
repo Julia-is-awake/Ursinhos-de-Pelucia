@@ -8,7 +8,6 @@
         <meta name="Keywords" content="pelucias, loja de pelucias, plush, plush store, pelucias boas, pelucias coloridas, LOJA DE PELUCIA, PELUCIA">
     </head>
     <body>
-        <script src="script.js"></script>
         <header>
             <h2 class="logo animate slideInTop" onclick="location.href='index.html'">plush plush</h2>
             <form action="" class="barra">
@@ -31,7 +30,7 @@
         </header>
 
         <main class="produtos">
-
+            
             <div class="banner-produtos">
                 <div class="banner-titulo">
                     <h1 class="animate slideInTop delay--0-3s">Produtos!</h1>
@@ -43,15 +42,15 @@
             <div class="grid-prdt-produtos">
 
                 <div class="produto-produtos">
-
+                    
                     <div class="cores">
                         <button onclick="cores(1, 'vermelho')" class="cor cor1"></button>
                         <button onclick="cores(1, 'verde')" class="cor cor2"></button>
                         <button onclick="cores(1, 'azul')" class="cor cor3"></button>
                     </div>
-
+                    
                     <div class="img-prdt-produtos item-1-produtos"></div>
-
+                    
                     <div class="descricao-produtos">
                         <div class="titulo-produtos">
                             <p>Sapinho fofo</p>
@@ -65,18 +64,22 @@
                             </div>
                             
                             <div class="contador-produtos">
-                                <button class="btn decrease"><img src="estilos/imagens/menos.png"></button>
-                                <span id="value">0</span>
-                                <button class="btn increase"><img src="estilos/imagens/mais.png"></button>
-                            </div>
 
+                                <button class="btn decrease" onclick="contador('menos')"><img src="estilos/imagens/menos.png"></button>
+
+                                <span id="value">0</span>
+
+                                <button class="btn increase" onclick="contador('mais')"><img src="estilos/imagens/mais.png"></button>
+                            
+                            </div>
+                            
                         </div>
                     </div>
                     
                 </div>
-
+                
                 <div class="produto-produtos">
-
+                    
                     <div class="cores">
                         <button onclick="cores(2, 'vermelho')" class="cor cor1"></button>
                         <button onclick="cores(2, 'verde')" class="cor cor2"></button>
@@ -84,12 +87,12 @@
                     </div>
 
                     <div onclick="location.href='#'" class="img-prdt-produtos item-2-produtos"></div>
-
+                    
                     <div class="descricao-produtos">
                         <div class="titulo-produtos">
                             <p>Gatinho Vermelho</p>
                         </div>
-
+                        
                         <div class="precos-content-produtos">
                             <div class="precos-produtos">
                                 <p>42,90</p>
@@ -164,7 +167,7 @@
                         <div class="titulo-produtos">
                             <p>Girrafinha pescoçuda</p>
                         </div>
-
+                        
                         <div class="precos-produtos">
                             <p>60,00</p>
                             <button class="produto-comprar-produtos"><img src="estilos/imagens/comprar.png" class="img-comprar-produtos"></button>
@@ -251,9 +254,10 @@
         </main>
 
 
+        <script src="script.js"></script>
 
         <footer>
-
+            
             <div class="footer1">
                 <h3>INFORMAÇÕES</h3>
                 <p>Endereço Rua Alegre, 123, Bairro, RS, Brasil</p>

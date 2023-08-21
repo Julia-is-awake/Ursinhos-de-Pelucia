@@ -1,11 +1,24 @@
-const imagens = ['estilos/imagens/Juntos.png', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg', 'https://t3.ftcdn.net/jpg/03/29/09/42/360_F_329094223_QHjakaco7v8zxDRR3EDqpBvJVJHDCPYT.jpg', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg', 'https://c1.wallpaperflare.com/preview/535/980/944/stuffed-animals-toys-teddy-bear.jpg' ]
+const imagens = ['estilos/imagens/Wallpaper01.png', 'estilos/imagens/Wallpaper02.png', 'estilos/imagens/Wallpaper03.png', 'estilos/imagens/Wallpaper04.png', 'estilos/imagens/Wallpaper05.png', 'estilos/imagens/Wallpaper06.png', 'estilos/imagens/Wallpaper07.png' ]
 
 var indexImagem = 0;
 const unidade = 100/imagens.length
 var margem = 0;
 
-window.onload = document.querySelector('.Indicador2').style.width = `${Math.round(unidade)}%`;
+window.onload = load()
+
+function load() {
+
+    try {
+        document.querySelector('.Indicador2').style.width = `${Math.round(unidade)}%`;
+        
+    } catch (error) {
+        
+    }
+}
+
     
+//carrossel
+
 function slider (number) {
     indexImagem += number
     if(number > 0) 
@@ -29,11 +42,15 @@ function slider (number) {
     }
 
     document.getElementsByClassName('Carrocel')[0].style.backgroundImage = `url('${imagens[indexImagem]}')`
-    console.log("indwx: " + indexImagem)
+    document.getElementsByClassName('CarrocelFundo')[0].style.backgroundImage = `url('${imagens[indexImagem]}')`
+    console.log("index: " + indexImagem)
     console.log("bar: " + Math.round(margem))
     console.log("unidade " + unidade)
     document.querySelector('.Indicador2').style.marginLeft = `${Math.round(margem)}%`
 }
+
+
+//cores produtos
 
 function cores (number, cores) {
     var valorCor;
@@ -55,52 +72,32 @@ function cores (number, cores) {
     document.getElementsByClassName(`item-${number}-produtos`)[0].style.filter = `sepia(100%) hue-rotate(${valorCor}deg) saturate(700%)`;
 }
 
-/* botao1.addEventListener('click', () => {
-    
-})
- */
+
+//contador
+
+let contagem = 0;
+
+function contador (valor)
+{
+    if (valor == "menos" && contagem != 0) 
+        contagem--;
+    else if (valor == "mais") 
+        contagem++;
+
+    document.getElementById("value").innerHTML = contagem;
+};
 
 
-   /* if (indexImagem === 0) {
-        indicador2.style.width = '33%';
-    } else if (indexImagem === 1) {
-        indicador2.style.width = '66%';
-    } else if (indexImagem === 2) {
-        indicador2.style.width = '100%';
+//menu sanduíche
+
+function menuShow() {
+    const menuMobile = document.getElementsByClassName('mobile-menu')[0];
+    if (menuMobile.classList.contains('open'))
+    {
+        menuMobile.classList.remove('open');
     }
-
-  }
-const botao1 = document.querySelector('cor1');
-const botao2 = document.querySelector('cor2');
-const botao3 = document.querySelector('cor3');
-
-const img1 = document.querySelector
-
-botao1.addEventListener('click', () => {
-    
-})
-
-/* //setar contador inicial
-let count = 0;
-
-//selecionando os botoes e valores
-const value = document.querySelector("#value");
-const btns = document.querySelectorAll(".btn");
-
-btns.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
-        const styles = e.currentTarget.classList;
-        if(styles.contains("decrease")){
-            count--;
-        }
-        value.textContent = count;
-    });
-});
-
-function trocar (f) {
-    document.getElementById("imagem-do-produto").src=f;
+    else
+    {
+        menuMobile.classList.add('open');
+    }
 }
-
-
- */
-/* function menuSw */

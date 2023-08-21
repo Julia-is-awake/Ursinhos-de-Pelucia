@@ -9,35 +9,39 @@
     </head>
     <body>
         <header>
-            <h2 class="logo animate slideInTop" onclick="location.href='index.html'">plush plush</h2>
-            <form action="" class="barra">
-                <input type="text" placeholder="Pesquisar" name="q">
-                <button type="submit"><img src="estilos/imagens/pesquisar.png"></button>
-            </form>
-            
-            <nav>
+            <div class="cabecalho">
+                <h2 class="logo animate slideInTop" onclick="location.href='index.html'">plush plush</h2>
+                <form action="" class="barra">
+                    <input type="text" placeholder="Pesquisar" name="q">
+                    <button type="submit"><img src="estilos/imagens/pesquisar.png"></button>
+                </form>
+                <nav>
+                    <ul>
+                        <li class="animate slideInTop"><a href="produtos.html">Produtos</a></li>
+                        <li class="animate slideInTop"><a href="colecoes.html">Coleções</a></li>
+                        <li class="animate slideInTop"><a href="about.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+                <div class="selecionar">
+                    <img src="estilos/imagens/pesquisar.png" class="pesquisar">
+                    <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter">
+                </div>
+
+                <div class="selecionar">
+                    <button class="menu" onclick="menuShow()"><img src="estilos/imagens/menu.png"></button>
+                </div>
+
+            </div>
+                
+            <div class="mobile-menu">
                 <ul>
-                    <li class="animate slideInTop"><a href="produtos.html">Produtos</a></li>
-                    <li class="animate slideInTop"><a href="colecoes.html">Coleções</a></li>
-                    <li class="animate slideInTop"><a href="about.html">Sobre Nós</a></li>
+                    <li class="item"><a href="produtos.html">Produtos</a></li>
+                    <li class="item"><a href="colecoes.html">Coleções</a></li>
+                    <li class="item"><a href="about.html">Sobre Nós</a></li>
+                    <li class="selecionar"> <img src="estilos/imagens/twitter.jpg" height="30vh"class="twitter"></li>
                 </ul>
-            </nav>
-            <div class="selecionar">
-                <img src="estilos/imagens/pesquisar.png" class="pesquisar">
-                <img src="estilos/imagens/menu.png" class="menu" onclick="location.href='#'">
-                <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="menuShow()" class="twitter">
             </div>
 
-            <div class="menu-responsivo">
-                <ul>
-                    <li class="animate slideInTop"><a href="produtos.html">Produtos</a></li>
-                    <li class="animate slideInTop"><a href="colecoes.html">Coleções</a></li>
-                    <li class="animate slideInTop"><a href="about.html">Sobre Nós</a></li>
-                </ul>
-                <div class="twitter-responsivo">
-                    <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter">
-                <div>
-            </div>
         </header>
 
         <main class="Inicial">
@@ -73,7 +77,7 @@
                 <div class="Inicial_Produto Inicial_Produto2">
 
                     <div class="Inicial_Img">
-                    <img src="https://cdn.discordapp.com/attachments/1104833430342090762/1126493078849589298/220167.png">
+                    <img src="https://cdn.discordapp.com/attachments/1104833430342090762/1126493078849589298/220167.png" alt="imagem circular de um desenho de uma praia a luz do dia com um guarda sol vermelho com listras brancas e cabo cinza, com a areia mostrando a frente e ao fundo o mar">
                     </div>
 
                     <div class="Inicial_Text">
@@ -99,17 +103,20 @@
                 </div>
 
             </div>
-            
-                <div class="Carrocel">
-                    <div class="BotoesCarrocel">
-                        <button class="CarrocelButton Voltar" onclick="slider(-1)">&#8656;</button>
-                        <div class="Indicador">
-                            <div class="Indicador1"></div>
-                            <div class="Indicador2"></div>    
+
+            <div class="CarrocelFundo">
+                <div class="CarrocelFundo2">
+                        <div class="Carrocel"></div>
+                        <div class="BotoesCarrocel">
+                            <button class="CarrocelButton Voltar" onclick="slider(-1)">&#8656;</button>
+                            <div class="Indicador">
+                                <div class="Indicador1"></div>
+                                <div class="Indicador2"></div>    
+                            </div>
+                            <button class="CarrocelButton Avançar" onclick="slider(+1)">&#8658;</button>
                         </div>
-                        <button class="CarrocelButton Avançar" onclick="slider(+1)">&#8658;</button>
-                 </div>
                 </div>
+            </div>
 
             <div class="Inicial_Produtos Inicial_2">
 
