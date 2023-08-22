@@ -8,24 +8,35 @@
     </head>
     <body>
         <header>
-            <h2 class="logo animate slideInTop" onclick="location.href='index.html'">plush plush</h2>
-            <form action="" class="barra">
-                <input type="text" placeholder="Pesquisar" name="q">
-                <button type="submit"><img src="estilos/imagens/pesquisar.png"></button>
-            </form>
-            
-            <nav>
-                <ul>
-                    <li class="animate slideInTop"><a href="produtos.html">Produtos</a></li>
-                    <li class="animate slideInTop"><a href="colecoes.html">Coleções</a></li>
-                    <li class="animate slideInTop"><a href="about.html">Sobre Nós</a></li>
-                </ul>
-            </nav>
-            <div class="selecionar">
-                <img src="estilos/imagens/pesquisar.png" class="pesquisar">
-                <img src="estilos/imagens/menu.png" class="menu" onclick="location.href='#'">
-                <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter">
+            <div class="cabecalho">
+                <h2 class="logo animate slideInTop" onclick="location.href='compra.html'">plush plush</h2>
+                <form action="" class="barra">
+                    <input type="text" placeholder="Pesquisar" name="q">
+                    <button type="submit"><img src="estilos/imagens/pesquisar.png"></button>
+                </form>
+                <nav>
+                    <ul>
+                        <li class="animate slideInTop"><a href="produtos.html">Produtos</a></li>
+                        <li class="animate slideInTop"><a href="colecoes.html">Coleções</a></li>
+                        <li class="animate slideInTop"><a href="about.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+                <div class="selecionar">
+                    <img src="estilos/imagens/pesquisar.png" class="pesquisar">
+                    <button onclick="menuShow()"><img class="menu" src="estilos/imagens/menu.png"></button>
+                    <img src="estilos/imagens/twitter.jpg" height="40vh" onclick="location.href='#'" class="twitter">
+                </div>
             </div>
+                
+            <div class="mobile-menu">
+                <ul>
+                    <li class="item"><a href="produtos.html">Produtos</a></li>
+                    <li class="item"><a href="colecoes.html">Coleções</a></li>
+                    <li class="item"><a href="about.html">Sobre Nós</a></li>
+                    <li class="selecionar"><img src="estilos/imagens/twitter.jpg" height="30vh"class="twitter"></li>
+                </ul>
+            </div>
+
         </header>
         <main id="compra">
             <div id="compra-produto">
