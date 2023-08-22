@@ -521,7 +521,7 @@ header ul a {
    background-color: #46DB70;
 }
 
-#value {
+.valor {
    margin: 0px 10px;
 }
 
@@ -532,12 +532,16 @@ header ul a {
 }
 
 .img-prdt-produtos {
-   height: 220px;
    width: 180px;
    background-size: 100%;
    background-position: center;
    background-repeat: no-repeat;
    align-self: center;
+   text-align: center;
+}
+
+.img-prdt-produtos img {
+    width: 180px;
 }
 
 .descricao-produtos {
@@ -546,22 +550,6 @@ header ul a {
    flex-direction: column;
    justify-content: space-between;
 }
-
-.item-1-produtos {background-image: url('https://mybtoys.com/wp-content/uploads/LB1904_PR.png')}
-
-.item-2-produtos {background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696')}
-
-.item-3-produtos {background-image: url('https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_large.png?v=1631621515')}
-
-.item-4-produtos {background-image: url('imagens/pato.png')}
-
-.item-5-produtos {background-image: url('imagens/girafa.png')}
-
-.item-6-produtos {background-image: url('imagens/jaré.png')}
-
-.item-7-produtos {background-image: url('imagens/tartuga.png')}
-
-.item-8-produtos {background-image: url('imagens/coiote.png')}
 
 .colecoes {
    padding: 80px 10%;
@@ -690,10 +678,10 @@ header ul a {
    background-size: 85%;
 }
 
-.item-1-colecoes .content-colecoes .img-content-colecoes {
-   background-image: url('https://cdn.shopify.com/s/files/1/1176/5302/products/flipemz_snowman_polarbear_bear_5_1000x.png?v=1632333229');
-   background-size: 100%;
-}
+.content-colecoes .img-content-colecoes img {
+    width: 160px;
+    height: 160px;
+ } 
 
 .item-1-colecoes {
    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2021/05/polo-norte.jpeg');
@@ -704,18 +692,9 @@ header ul a {
    background-position: bottom;
 }
 
-.item-2-colecoes .content-colecoes .img-content-colecoes {
-   background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Crit_Crab_Plush-1_1000x.png.webp?v=1633008103');
-   background-size: 110%;
-}
-
 .item-3-colecoes {
    background-image: url('https://wallpapercave.com/wp/wp6874284.jpg');
    color: white;
-}
-
-.item-3-colecoes .content-colecoes .img-content-colecoes {
-   background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/unnamed_0096cfae-8131-402c-88a7-06c1e8c9ac20_1000x.png.webp?v=1661900981');
 }
 
 .item-4-colecoes {
@@ -738,27 +717,13 @@ header ul a {
    color: black;
 }
 
-.item-4-colecoes .content-colecoes .img-content-colecoes {
-   background-image: url('https://uploads-ssl.webflow.com/6058b2c91d0fcb92ca9cca7c/6058b2c91d0fcbfe969ccaf2_33910-6-toy-clipart-min.png');
-   background-size: 100%;
-}
-
 .item-5-colecoes {
    background-image: url('https://img.freepik.com/free-vector/large-school-building-scene_1308-32058.jpg?w=2000');
    background-position: bottom;
 }
 
-.item-5-colecoes .content-colecoes .img-content-colecoes {
-   background-image: url('imagens/lapis.png');
-   background-size: 100%;
-}
-
 .item-6-colecoes {
    background-image: url('https://img.freepik.com/fotos-premium/paisagem-dos-desenhos-animados-do-pantano-fundo-da-floresta-com-pantano-e-lago-ai_76964-6600.jpg');
-}
-
-.item-6-colecoes .content-colecoes .img-content-colecoes {
-   background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/unnamed_a26818e0-845b-4f44-b779-b92dd6b0afc6_1000x.png.webp?v=1669655797');
 }
 
 /* @keyframes arcoiris {
@@ -787,7 +752,7 @@ header ul a {
 .parte1baner {
    background-color: #ee8585da;
    padding-top: 10%;
-   height: 45vh;
+   height: 48vh;
    width: 100%;
    position: relative;
    display: flex;
@@ -796,6 +761,7 @@ header ul a {
    top: 0;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.281);
 }
+
 .textobanerabout {
    position: absolute;
    top: 50%;
@@ -1098,6 +1064,7 @@ footer ul li:hover {
 .mobile-menu {
     display: none;
 }
+
 /*Mudanças para ipad!!!!!! (e o galaxy fold aberto) */
 
 @media only screen and (max-width: 1021px) {
@@ -1171,6 +1138,10 @@ footer ul li:hover {
    .img-prdt-produtos {
        width: 100%;
        height: 25vw;
+   }
+
+   .img-prdt-produtos img {
+        width: 20vw;
    }
 
    .descricao-produtos {
@@ -1294,7 +1265,7 @@ footer ul li:hover {
     }
 
     .mobile-menu {
-        margin-top: 320px;
+        margin-top: 330px;
         position: absolute;
         background-color: #FC6C6C;
         border-radius: 0 0 0 5px;
@@ -1535,6 +1506,12 @@ footer ul li:hover {
        height: 40vw;
        width: 100%;
    }
+
+   
+   .img-prdt-produtos img {
+        width: 30vw;
+    }
+
 
    .descricao-produtos {
        height: 14vw;

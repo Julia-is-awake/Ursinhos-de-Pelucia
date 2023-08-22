@@ -20,7 +20,7 @@ function load() {
 //carrossel
 
 function slider (number) {
-    indexImagem += number
+    indexImagem += number //aumenta em 1 a posição da imagem
     if(number > 0) 
     {
         margem = margem + unidade 
@@ -30,12 +30,12 @@ function slider (number) {
         margem = margem - unidade
     }
 
-    if(indexImagem < 0)
+    if(indexImagem < 0) // Vai pro final
     {
         indexImagem = imagens.length -1
         margem = 100 - Math.round(unidade)
     }
-    if(indexImagem >= imagens.length)
+    if(indexImagem == imagens.length) // Vai pro começo // IndexImagem começa a contar no zero, sua última posição é 6
     {
         indexImagem = 0
         margem = 0
@@ -75,16 +75,13 @@ function cores (number, cores) {
 
 //contador
 
-let contagem = 0;
-
-function contador (valor)
+function contador (valor, produto)
 {
+    let contagem = document.getElementById(`value${produto}`);
     if (valor == "menos" && contagem != 0) 
-        contagem--;
+        contagem.innerHTML--;
     else if (valor == "mais") 
-        contagem++;
-
-    document.getElementById("value").innerHTML = contagem;
+        contagem.innerHTML++;
 };
 
 
