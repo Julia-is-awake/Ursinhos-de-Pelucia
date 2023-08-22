@@ -95,9 +95,11 @@ function menuShow() {
     if (menuMobile.classList.contains('open'))
     {
         menuMobile.classList.remove('open');
+        document.querySelector('.menu').src = "estilos/imagens/menu.png";
     }
     else
     {
         menuMobile.classList.add('open');
+        document.querySelector('.menu').src = "estilos/imagens/x.png";
     }
 }
