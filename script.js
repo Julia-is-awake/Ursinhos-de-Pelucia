@@ -78,7 +78,7 @@ function cores (number, cores) {
 function contador (valor, produto)
 {
     let contagem = document.getElementById(`value${produto}`);
-    if (valor == "menos" && contagem != 0) 
+    if (valor == "menos" && contagem.innerHTML != 0) 
         contagem.innerHTML--;
     else if (valor == "mais") 
         contagem.innerHTML++;

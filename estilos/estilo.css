@@ -485,12 +485,14 @@ header ul a {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   height: 100px;
 }
 
 .precos-produtos {
    display: flex;
    flex-direction: row-reverse;
-   justify-content: start;
+   justify-content: center;
+   align-items: center;
    color: #606060;
    font-size: 16px;
 }
@@ -545,10 +547,19 @@ header ul a {
 }
 
 .descricao-produtos {
-   height: 100px;
+   height: 150px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1175px) {
+    .precos-content-produtos {
+        flex-direction: column;
+    }
+    .contador-produtos {
+        padding: 0 20px;
+    }
 }
 
 .colecoes {
@@ -1067,7 +1078,7 @@ footer ul li:hover {
 
 /*Mudanças para ipad!!!!!! (e o galaxy fold aberto) */
 
-@media only screen and (max-width: 1021px) {
+@media only screen and (max-width: 1000px) {
    .logo {
        font-size: 4vw;
    }
@@ -1137,7 +1148,7 @@ footer ul li:hover {
 
    .img-prdt-produtos {
        width: 100%;
-       height: 25vw;
+       height: 20vw;
    }
 
    .img-prdt-produtos img {
@@ -1145,7 +1156,8 @@ footer ul li:hover {
    }
 
    .descricao-produtos {
-       height: 12vw;
+       height: 140px;
+       padding-bottom: 10px;
    }
 
    .produto-comprar-produtos {
@@ -1161,6 +1173,26 @@ footer ul li:hover {
    .produto-produtos p {
        margin: 5px;
        font-size: 2.5vw;
+   }
+
+   .precos-content-produtos {
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .contador-produtos {
+        margin: 10px;
+        padding: 0 20px;
+        
+   }
+
+   .contador-produtos img {
+        height: 20px;
+   }
+
+   .btn {
+        padding: 0.4em;
+        
    }
 
    .banner-produtos {
@@ -1472,6 +1504,11 @@ footer ul li:hover {
        padding-top: 50px;
    }
 
+   .contador-produtos img {
+    height: 5vw;
+}
+
+
    .banner-produtos h1 {
        font-size: 12vw;
    }
@@ -1503,7 +1540,7 @@ footer ul li:hover {
    }
 
    .img-prdt-produtos {
-       height: 40vw;
+       height: 30vw;
        width: 100%;
    }
 
@@ -1514,7 +1551,7 @@ footer ul li:hover {
 
 
    .descricao-produtos {
-       height: 14vw;
+       height: 25vw;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
@@ -1531,14 +1568,12 @@ footer ul li:hover {
    
    .precos-produtos {
        display: flex;
-       flex-direction: row;
+       flex-direction: row-reverse;
        align-items: center;
-       justify-content: space-between;
    }
 
    .produto-produtos p {
        font-size: 3.5vw;
-       margin: 2px;
    }
 
    .img-comprar-produtos {
@@ -1791,6 +1826,10 @@ footer ul li:hover {
 
    .mobile-menu{
     margin-top: 315px;
+   }
+
+   .produto-produtos {
+    padding-bottom: 20px;
    }
 
 }
