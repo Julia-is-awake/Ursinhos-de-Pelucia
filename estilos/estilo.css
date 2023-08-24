@@ -1293,29 +1293,31 @@ footer ul li:hover {
 
     .mobile-menu.open{
         padding: 1% 2% 2% 5%;
-        
     }
 
     .mobile-menu {
-        margin-top: 330px;
+        margin-top: 355px;
         position: absolute;
-        background-color: #FC6C6C;
+        background-color: #FF6B6B;
         border-radius: 0 0 0 5px;
         right: 0;
         z-index: 100;
         padding: 3em;
         line-height: 58px;
-        
+        width: 100%;
+        justify-content: center;
     }
 
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
-        text-align: center;
- 
+        align-items: center;
     }
 
-
+    .mobile-menu li {
+        text-align: center;
+        padding: 0px 0px 0 0px;
+    }
 
     .mobile-menu a{
         font-size: 18px;
@@ -1418,15 +1420,12 @@ footer ul li:hover {
    }
 
    .mobile-menu{
-    margin-top: 320PX;
+    margin-top: 355PX;
    }
 
    .mobile-menu.open{
     padding-left: 3%;
 }
-
-
-
 }
 
    
@@ -1506,7 +1505,7 @@ footer ul li:hover {
 
    .contador-produtos img {
     height: 5vw;
-}
+    }
 
 
    .banner-produtos h1 {
@@ -1702,21 +1701,21 @@ footer ul li:hover {
        line-height: normal;
    }
 
-   .mobile-menu{
-    margin-top: 240px;
-   }
-
    .mobile-menu.open{
-    padding-left: 5%;
-}
+        padding-left: 5%;
+        
+    }
 
-.cabecalho {
-    height: 50px;
-}
+    .cabecalho {
+        height: 50px;
+    }
 
-.mobile-menu{
-    margin-top: 320px;
-}
+    .mobile-menu{
+        margin-top: 310px;
+        
+    }
+
+  
 
 }
 
@@ -1825,7 +1824,7 @@ footer ul li:hover {
    }
 
    .mobile-menu{
-    margin-top: 315px;
+    margin-top: 310px;
    }
 
    .produto-produtos {
